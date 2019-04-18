@@ -1,0 +1,37 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PORTAFOLIO</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+
+  </head>
+  <body>
+    <h1 id="titulo_cambiar_color_con_js"
+        class="text-center">cambiar color con js
+        </h1>
+        <p id="texto_de_relleno"
+              class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+          Quos minima iste, autem illo nulla officiis, iure dicta repellendus,<br>
+          ex debitis beatae! Explicabo iusto quo vel nisi labore pariatur officia,<br>
+          Sconsequuntur.</p>
+          <div
+          class="text-center">
+          <input type="text" placeholder="Ingres codigo de color"
+          id="color_input"
+          value=""
+          class="text-center"> <br> <br>
+          <a href="#"
+              class="btn btn-primary btn-lg" id="click_enviar">haz clik aqui
+          </a>
+          </div>
+          <!--aqui esta el escrip de cambio de color-->
+          <script type="text/javascript">
+            document.getElementById("click_enviar").addEventListener("click",function(){
+            var colorescrito =   document.getElementById("color_input").value;
+            document.getElementById("texto_de_relleno").style.color = colorescrito;            })
+          </script>
+      </body>
+</html>
