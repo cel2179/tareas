@@ -1,0 +1,101 @@
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>PORTAFOLIO</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <h1 id="cifrado_cesar" class="text-center">sirve para encriptar
+  </h1>
+  <div class="row">
+    <input type="text" name="" id="textoplano" class="col">
+    <div id="textcifrado" class="col"></div>
+  </div>
+  <div class="text-center">
+    <br>
+    <br>
+    <a href="#" class="btn btn-success btn-log" id="calcular">cifrar</a>
+  </div>
+  <script>
+    function rot13(texto) {
+      var textarray = texto.split("");
+      var cifradoarray = [];
+      var textocifrado = "";
+      for (var i = 0; i < textarray.length; i++) {
+
+        if(textarray[i]==" "){
+          cifradoarray.push(" ")
+        }
+          else if (textarray[i]=="A"){
+          cifradoarray.push("N")}
+          else if (textarray[i]=="B"){
+            cifradoarray.push("O")}
+          else if (textarray[i]=="C"){
+          cifradoarray.push("P")}
+          else if (textarray[i]=="D"){
+          cifradoarray.push("Q")}
+          else if (textarray[i]=="E"){
+          cifradoarray.push("R")}
+          else if (textarray[i]=="F"){
+          cifradoarray.push("S")}
+          else if (textarray[i]=="G"){
+          cifradoarray.push("T")}
+          else if (textarray[i]=="H"){
+          cifradoarray.push("U")}
+          else if (textarray[i]=="I"){
+          cifradoarray.push("V")}
+          else if (textarray[i]=="J"){
+          cifradoarray.push("W")}
+          else if (textarray[i]=="K"){
+          cifradoarray.push("X")}
+          else if (textarray[i]=="L"){
+          cifradoarray.push("Y")}
+          else if (textarray[i]=="M"){
+          cifradoarray.push("Z")}
+          else if (textarray[i]=="N"){
+          cifradoarray.push("A")}
+          else if (textarray[i]=="O"){
+          cifradoarray.push("B")}
+          else if (textarray[i]=="P"){
+          cifradoarray.push("C")}
+          else if (textarray[i]=="Q"){
+          cifradoarray.push("D")}
+          else if (textarray[i]=="R"){
+          cifradoarray.push("E")}
+          else if (textarray[i]=="S"){
+          cifradoarray.push("F")}
+          else if (textarray[i]=="T"){
+          cifradoarray.push("G")}
+          else if (textarray[i]=="U"){
+          cifradoarray.push("H")}
+          else if (textarray[i]=="V"){
+          cifradoarray.push("I")}
+          else if (textarray[i]=="W"){
+          cifradoarray.push("J")}
+          else if (textarray[i]=="X"){
+          cifradoarray.push("K")}
+          else if (textarray[i]=="Y"){
+          cifradoarray.push("L")}
+          else if (textarray[i]=="Z"){
+          cifradoarray.push("M")}
+          else {cifradoarray.push("@")}
+          console.log(cifradoarray[i])
+        }
+        console.log(cifradoarray)
+        cifradotext = cifradoarray.join("")
+        return cifradotext
+      }
+
+  </script>
+</body>
+
+</html>
+
+
+
+
+else if (textarray[i]=="Ñ"){
+  cifradoarray.push("Ñ")}
